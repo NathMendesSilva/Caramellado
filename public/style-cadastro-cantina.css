@@ -1,0 +1,195 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+    background-color: #F2920C;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #8A0000;
+}
+
+header {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 1.5% 0%;
+    top: 0;
+    position: sticky;
+    box-shadow: 1px 1px 7px;
+}
+
+header img {
+    width: 25%;
+    height: 25%;
+}
+
+#titulo h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #8A0000;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    margin: 5% 10%;
+    padding: 7%;
+    border-radius: 3%;
+}
+
+.inputform {
+    font-size: 1.2rem;
+    border: solid black 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 10%;
+}
+
+.inputform:focus {
+    outline: 0;
+}
+
+#p-login p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+#p-login p a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #F2920C;
+}
+
+#p-login p a:hover {
+    text-decoration: underline;
+}
+
+#btncadastrar {
+    color: #FFFFFF;
+    font-weight: 600;
+    background-color: #8A0000;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 5%;
+    padding: 5% 0%;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+#btncadastrar:hover {
+    transition: 0.3s;
+    background-color: #CF0E0E;
+}
+
+#divback {
+    overflow: hidden;
+}
+ 
+#back {
+    width: 8%;
+    margin-left: 5%;
+    margin-top: 4%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+ 
+#back:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 2%;
+}
+
+@media (max-width: 1000px) {    /*@media do celular*/
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media (min-width: 1000px) {    /*@media do computador*/
+    header {
+        background-color: #FFFFFF;
+        text-align: center;
+        padding: 1% 0%;
+        top: 0;
+        position: sticky;
+    }
+    
+    header img {
+        width: 10%;
+        height: 10%;
+    }
+
+    #titulo h1 {
+        font-size: 1.8rem;
+    }
+
+    form {
+        margin: 2% 30%;
+        padding: 3%;
+    }
+
+    .inputform {
+        font-size: 1.6rem;
+        margin-bottom: 5%;
+    }
+
+    #back {
+        width: 3%;
+        margin-left: 3%;
+        margin-top: 2%;
+        -webkit-transition: -webkit-transform .5s ease;
+        transition: transform .5s ease;
+    }
+     
+    #back:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    #p-login p {
+        font-size: 1.2rem;
+    }
+
+    #p-login p a {
+        font-size: 1.4rem;
+    }
+
+    #btncadastrar {
+        font-size: 1.6rem;
+        margin-top: 3%;
+        padding: 3% 0%;
+    }
+
+    footer {
+        font-size: 1.2rem;
+        margin-bottom: 1%;
+        bottom: 0;
+    }
+}

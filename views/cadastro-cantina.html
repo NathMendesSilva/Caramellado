@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/public/style-cadastro-cantina.css">
+	<link rel="icon" type="image/svg" href="LogoO.svg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<title>Caramello</title>
+</head>
+<body>
+	<header>
+		<img src="/public/Caramello.svg">
+	</header>
+	<div id="idback">
+		<a href="http://localhost:3000/botoes-cadastrar">
+			<img src="/public/arrow-left-solid.svg" id="back">
+		</a>
+	</div>
+	<div id="titulo">
+		<h1>CADASTRO DE CANTINA</h1>
+	</div>
+	<form action="/cadastro-cantina" method="POST">
+		<input class="inputform" name="cnpj" type="text" placeholder="CNPJ" id="cnpj" onkeypress="return event.charCode >= 48 && event.charCode <= 57" oninput="mascara_cnpj()" maxlength="18" required oninvalid="this.setCustomValidity('Campo obrigatório')" 
+		onchange="try{setCustomValidity('')}catch(e){}">
+		<input class="inputform" name="razao" type="text" placeholder="Razão Social" required oninvalid="this.setCustomValidity('Campo obrigatório')" 
+		onchange="try{setCustomValidity('')}catch(e){}">
+		<input class="inputform" name="nome" type="text" placeholder="Nome da Cantina" required oninvalid="this.setCustomValidity('Campo obrigatório')" 
+		onchange="try{setCustomValidity('')}catch(e){}">
+		<input class="inputform" name="email" type="email" placeholder="E-mail" required oninvalid="this.setCustomValidity('Campo obrigatório')" 
+		onchange="try{setCustomValidity('')}catch(e){}">
+		<input class="inputform" name="senha" type="password" placeholder="Senha" required oninvalid="this.setCustomValidity('Campo obrigatório')" 
+		onchange="try{setCustomValidity('')}catch(e){}">
+		<input class="inputform" name="confirmarsenha" type="password" placeholder="Confirmar Senha" required oninvalid="this.setCustomValidity('Campo obrigatório')" 
+		onchange="try{setCustomValidity('')}catch(e){}">
+		<div id="p-login">
+			<p>Já tem uma conta?</p>
+			<p>Faça o <a href="login-cantina.html">Login</a></p>
+		</div>
+		<input id="btncadastrar" name="cadastrar" type="submit" value="CADASTRAR">
+	</form>
+	<footer>
+		<div id="copy">
+			Copyright © | Caramello 2023 
+		</div>
+	</footer>
+</body>
+	<script src="/public/script.js"></script>
+</html>
